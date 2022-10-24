@@ -1,0 +1,27 @@
+items:
+  [
+    gcc/gcc-10.3.0-2021.7.json,
+    gcc/gcc-10.0.0-2020.q4.json,
+    gcc/gcc-10.3.0-2021.10.json
+  ]
+indexes:
+  IdentityKey/id:
+    keys:
+      gcc: [ 0, 1, 2 ]
+    words:
+      gcc: [ 0, 1, 2 ]
+  SemverKey/version:
+    keys:
+      10.0.0-2020q4: [ 1 ]
+      10.3.0-2021.7: [ 0 ]
+      10.3.0-2021.10: [ 2 ]
+  StringKey/summary:
+    keys:
+      GCC compiler for ARM CPUs.: [ 0, 1, 2 ]
+    words:
+      ARM: [ 0, 1, 2 ]
+      CPUs: [ 0, 1, 2 ]
+      CPUs.: [ 0, 1, 2 ]
+      GCC: [ 0, 1, 2 ]
+      compiler: [ 0, 1, 2 ]
+      for: [ 0, 1, 2 ]
