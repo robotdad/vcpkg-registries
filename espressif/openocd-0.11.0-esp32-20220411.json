@@ -1,0 +1,69 @@
+{
+  "id": "openocd",
+  "version": "0.11.0-esp32-20220411",
+  "description": "OpenOCD for ESP32",
+  "contacts": {
+    "Garrett Campbell": {
+      "email": "gcampbell@microsoft.com",
+      "role": [
+        "publisher",
+        "originator"
+      ]
+    },
+    "Garrett Serack": {
+      "email": "garretts@microsoft.com",
+      "role": [
+        "publisher",
+        "originator"
+      ]
+    }
+  },
+  "demands": {
+    "linux and x64": {
+      "install": {
+        "untar": "https://github.com/espressif/openocd-esp32/releases/download/v0.11.0-esp32-20220411/openocd-esp32-linux-amd64-0.11.0-esp32-20220411.tar.gz",
+        "sha256": "8d49845d7f0f2f9178e72c694a76e39a6ef3dd219cfccbfc2b8e09fc8d8f1c6e",
+        "strip": 1
+      }
+    },
+    "linux and arm": {
+      "install": {
+        "untar": "https://github.com/espressif/openocd-esp32/releases/download/v0.11.0-esp32-20220411/openocd-esp32-linux-armel-0.11.0-esp32-20220411.tar.gz",
+        "sha256": "49189d645d8c482b81d1870766a5795da30a79b352d98803f0054f200174fc5a",
+        "strip": 1
+      }
+    },
+    "linux and x86": {
+      "error": "Do not install openocd on this machine. Only install this on request?\n"
+    },
+    "osx": {
+      "install": {
+        "untar": "https://github.com/espressif/openocd-esp32/releases/download/v0.11.0-esp32-20220411/openocd-esp32-macos-0.11.0-esp32-20220411.tar.gz",
+        "sha256": "d718bc24087f796ff06f49fb9052183b302402ab775460b1ebdfc4b5e1768463",
+        "strip": 1
+      }
+    },
+    "windows and x86": {
+      "install": {
+        "unzip": "https://github.com/espressif/openocd-esp32/releases/download/v0.11.0-esp32-20220411/openocd-esp32-win32-0.11.0-esp32-20220411.zip",
+        "sha256": "167e9299fa1d022b493c76332f507f6a6735c7bfec3cf91c54a598b331c78b5f",
+        "strip": 1
+      }
+    },
+    "windows and x64": {
+      "install": {
+        "unzip": "https://github.com/espressif/openocd-esp32/releases/download/v0.11.0-esp32-20220411/openocd-esp32-win32-0.11.0-esp32-20220411.zip",
+        "sha256": "167e9299fa1d022b493c76332f507f6a6735c7bfec3cf91c54a598b331c78b5f",
+        "strip": 1
+      }
+    }
+  },
+  "exports": {
+    "paths": {
+      "PATH": "bin"
+    },
+    "environment": {
+      "OPENOCD_SCRIPTS": "./share/openocd/scripts"
+    }
+  }
+}

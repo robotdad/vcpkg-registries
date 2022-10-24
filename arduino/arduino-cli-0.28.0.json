@@ -1,0 +1,77 @@
+{
+  "id": "arduino-cli",
+  "version": "0.18.3",
+  "summary": "Arduino IDE",
+  "description": "The open-source Arduino Software (IDE) makes it easy to write code and upload it to the board. This software can be used with any Arduino board.",
+  "contacts": {
+    "Marc Goodner": {
+      "email": "mgoodner@microsoft.com",
+      "role": "publisher"
+    },
+    "Arduino": {
+      "role": "originator"
+    }
+  },
+  "demands": {
+    "windows and x64": {
+      "install": {
+        "unzip": "https://github.com/arduino/arduino-cli/releases/download/0.28.0/arduino-cli_0.28.0_Windows_32bit.zip",
+        "sha256": "73b2d0b10e5f226f052305f72cad728393c37b304ecdc1a081a1a845e6160d35"
+      }
+    },
+    "windows and x86": {
+      "install": {
+        "unzip": "https://github.com/arduino/arduino-cli/releases/download/0.28.0/arduino-cli_0.28.0_Windows_32bit.zip",
+        "sha256": "73b2d0b10e5f226f052305f72cad728393c37b304ecdc1a081a1a845e6160d35"
+      }
+    },
+    "windows": {
+      "exports": {
+        "tools": {
+          "arduino-cli": "arduino-cli.exe"
+        },
+        "paths": {
+          "PATH": "."
+        }
+      }
+    },
+    "linux and x86": {
+      "install": {
+        "untar": "https://github.com/arduino/arduino-cli/releases/download/0.28.0/arduino-cli_0.28.0_Linux_32bit.tar.gz",
+        "sha256": "26f883c62fa6a811a12ae35df01a4727ec74cb37e830ea1ab8ef1002f03d854f",
+        "strip": 1
+      }
+    },
+    "linux and x64": {
+      "install": {
+        "untar": "https://github.com/arduino/arduino-cli/releases/download/0.28.0/arduino-cli_0.28.0_Linux_ARM64.tar.gz",
+        "sha256": "e70b48129fe866d126486714896d47d980d527aa4bf0437fc7c0f09e74ba49fa",
+        "strip": 1
+      }
+    },
+    "linux and arm64": {
+      "install": {
+        "untar": "https://github.com/arduino/arduino-cli/releases/download/0.18.3/arduino-cli_0.18.3_Linux_ARM64.tar.gz",
+        "sha256": "b5c7d046080bbb37dba8bad4556942a0a491c5fc4cab3ee5f2bb2c24ed0ad809",
+        "strip": 1
+      }
+    },
+    "osx": {
+      "install": {
+        "untar": "https://github.com/arduino/arduino-cli/releases/download/0.28.0/arduino-cli_0.28.0_macOS_64bit.tar.gz",
+        "sha256": "e442f7acce74de3e65e624ddb27cdf84e2fdc7ed3bc8a8b5ed9bc972879e1920",
+        "strip": 3
+      }
+    },
+    "not windows": {
+      "exports": {
+        "tools": {
+          "arduino-cli": "arduino-cli"
+        },
+        "paths": {
+          "PATH": "."
+        }
+      }
+    }
+  }
+}
