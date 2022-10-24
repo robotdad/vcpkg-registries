@@ -1,0 +1,26 @@
+items:
+  [
+    openocd/openocd-0.11.0-ms1.json,
+    openocd/openocd-0.11.0.json
+  ]
+indexes:
+  IdentityKey/id:
+    keys:
+      openocd: [ 0, 1 ]
+    words:
+      openocd: [ 0, 1 ]
+  SemverKey/version:
+    keys:
+      0.11.0-ms1: [ 0 ]
+      0.11.0: [ 1 ]
+  StringKey/summary:
+    keys:
+      Free and open on-chip debugging: [ 0, 1 ]
+    words:
+      Free: [ 0, 1 ]
+      and: [ 0, 1 ]
+      chip: [ 0, 1 ]
+      debugging: [ 0, 1 ]
+      on: [ 0, 1 ]
+      on-chip: [ 0, 1 ]
+      open: [ 0, 1 ]
