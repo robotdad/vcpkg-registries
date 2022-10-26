@@ -9,6 +9,13 @@
       "role": "publisher"
     }
   },
+  "registries": [
+    {
+      "kind": "artifact",
+      "location": "https://aka.ms/vcpkg-artifacts-arm",
+      "name": "arm"
+    }
+  ],
   "requires": {
     "arm:gcc": "10.3.0-2021.10",
     "cmake": "3.20.1",
