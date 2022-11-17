@@ -62,7 +62,8 @@
           ]
         },
         "tools": {
-          "GCC_10_3_2021_7_TOOLCHAIN_ROOT": "./bin/"
+          "GCC_TOOLCHAIN_10_3_1__20210621": "./bin/",
+          "GCC_TOOLCHAIN_10_3_1": "./bin/"
         }
       }
     }
